@@ -29,7 +29,7 @@ Explain whether each scenario is a classification or regression problem, and ind
 ## Q3.
 
 #### (a) Provide a sketch of typical (squared) bias, variance, training error, test error, and Bayes (or irreducible) error curves, on a single plot, as we go from less flexible statistical learning methods towards more flexible approaches.
-![Bias Variance])(/img/bias_variance.jpeg)
+![Bias Variance])(https://github.com/monipip3/islr/blob/master/img/bias_variance.jpg)
 
 #### (b) Explain why each of the five curves has the shape displayed in part (a).
 * As flexibility in the model increases, so does variance because of instability. One change can throw off the estimation more than inflexible model like linear regression which fits a straight line through the obs ervations. Bias also decreases as a model because more flexible because you can mirror almost every point, for example when K = 1 in KNN. Inflexible models like lasso regression are highly biased but more interepretable. The testing error can never be below Bayes error because Bayes error is irreducible. The testing error is curve linear because as a model becomes more flexible, the testing error goes down but once you run out of data the testing error increases. The training error goes down as flexibility increases, for example training error is below the Bayes error because in KNN K = 1 , your training error is 0. The sweet spot is where variance and bias meet. 
@@ -42,18 +42,18 @@ Explain whether each scenario is a classification or regression problem, and ind
 + *Trying to understand who is at risk for developing lung cancer. You can do a logistic regression problem to try to see what factors such as years smoking, age, gender, and many more variables if there is a correlation between observations of people who have developed lung cancer and people who have not. The goal is inference.
 
 #### (b) Describe three real-life applications in which regression might be useful. Describe the response, as well as the predictors. Is the goal of each application inference or prediction? Explain your answer.
-+ *Similar to 4b but instead of predicting housing price
-+ *Trying to understand fatality rates for a certain disease using demographics, this is for inference. 
-+ *Trying to predict someone's salary based on age, experience, job title, years of experience, education level, and gender. This can be both inference and prediction.
++ *Similar to 4b but instead of predicting housing price*
++ *Trying to understand fatality rates for a certain disease using demographics, this is for inference. *
++ *Trying to predict someone's salary based on age, experience, job title, years of experience, education level, and gender. This can be both inference and prediction.*
  
  #### (c) Describe three real-life applications in which cluster analysis might be useful.
  + *Creating personas, trying to divide your customers in different groups utilizing spending habits, demographics, etc.*
  + *Clustering similar cities together for urban policy making, so mayors can network from similar cities and learn from each other*
- + *Clustering different movies or songs to see which are similar to each other**
+ + *Clustering different movies or songs to see which are similar to each other*
  
  ## Q5. 
 What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification? Under what circumstances might a more flexible approach be preferred to a less flexible approach? When might a less flexible approach be preferred?
-* Advantages of a less flexible approach would be: (1) when you have a lot of predictors and a small sample size, (2) you understand or assume the relationship between Y and your predictors, for example if you know it is a linear relationship you might want to use lasso or ridge ression and (3) if you want something more interepretable. A more flexible approach would be preffered if you have an extremely large sample size and you want to optimize the testing error, because you care about prediction. 
+*Advantages of a less flexible approach would be: (1) when you have a lot of predictors and a small sample size, (2) you understand or assume the relationship between Y and your predictors, for example if you know it is a linear relationship you might want to use lasso or ridge ression and (3) if you want something more interepretable. A more flexible approach would be preffered if you have an extremely large sample size and you want to optimize the testing error, because you care about prediction. *
 
 ## Q6. Describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)? What are its disadvantages?
 *If you don't know the relationship between Y and the predictors, a non parametric approach would be best at first. If however you know for example the relationship is linear, a parametric approach like linear regression will always beat out something like KNN unless the sample size was extremely large and the KNN boundary line behaved like a straight line. A parametric approach is more interepretable than a flexible (non parametric) model. If you care more about prediction than inference a non parametric approach would be preferred.*
@@ -69,13 +69,13 @@ What are the advantages and disadvantages of a very flexible (versus a less flex
 + 1.73 - Red
 
  #### b) What is our prediction with K = 1? Why?
-*Green because the first Green is at 1.41 which is the closest
+*Green because the first Green is at 1.41 which is the closest*
 
 #### c)What is our prediction with K = 3? Why?
-*Red because 3 out of 3 of the closest points are Red
+*Red because 3 out of 3 of the closest points are Red*
 
 #### d) If the Bayes decision boundary in this problem is highly nonlinear, then would we expect the best value for K to be large or small? Why?
-* We expect the best value for K to be SMALL because the bigger K is the more linear the bounary is. For example if K = 100, 1/100 = .001 versus K being 3 , 1/3 is .333. The smaller K is the more flexible the boundary.
+*We expect the best value for K to be SMALL because the bigger K is the more linear the bounary is. For example if K = 100, 1/100 = .001 versus K being 3 , 1/3 is .333. The smaller K is the more flexible the boundary.*
 
 
 
